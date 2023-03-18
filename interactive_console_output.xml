@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230312 14:36:32.897" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/sophietruong1992/.vscode/extensions/robocorp.robotframework-lsp-1.9.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<status status="PASS" starttime="20230312 14:37:46.780" endtime="20230312 14:38:17.636"/>
+</kw>
+<kw name="Open the robot order website">
+<msg timestamp="20230312 15:04:04.661" level="FAIL">User keyword 'Open the robot order website' contains no keywords.</msg>
+<status status="FAIL" starttime="20230312 15:04:04.659" endtime="20230312 15:04:04.661"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://robotsparebinindustries.com/orders.csv</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<status status="PASS" starttime="20230312 15:25:48.966" endtime="20230312 15:25:49.408"/>
+</kw>
+<kw name="Download" library="RPA.HTTP">
+<arg>https://robotsparebinindustries.com/orders.csv</arg>
+<doc>An alias for the ``HTTP Get`` keyword.</doc>
+<status status="PASS" starttime="20230312 15:26:08.697" endtime="20230312 15:26:08.728"/>
+</kw>
+<kw name="Read table from CSV" library="RPA.Tables">
+<doc>Read a CSV file as a table.</doc>
+<msg timestamp="20230312 16:18:37.101" level="FAIL">Keyword 'RPA.Tables.Read table from CSV' expected 1 to 7 arguments, got 0.</msg>
+<status status="FAIL" starttime="20230312 16:18:37.101" endtime="20230312 16:18:37.101"/>
+</kw>
+<kw name="Download the orders file">
+<kw name="https://robotsparebinindustries.com/orders.csv">
+<msg timestamp="20230312 16:43:11.637" level="FAIL">No keyword with name 'https://robotsparebinindustries.com/orders.csv' found.</msg>
+<status status="FAIL" starttime="20230312 16:43:11.637" endtime="20230312 16:43:11.637"/>
+</kw>
+<status status="FAIL" starttime="20230312 16:43:11.630" endtime="20230312 16:43:11.638"/>
+</kw>
+<kw name="Read order file as a table">
+<status status="NOT RUN" starttime="20230312 16:43:11.642" endtime="20230312 16:43:11.642"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${string}</var>
+<arg>Hello, world!</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230312 16:43:11.642" endtime="20230312 16:43:11.642"/>
+</kw>
+<kw name="Download the orders file">
+<kw name="https://robotsparebinindustries.com/orders.csv">
+<msg timestamp="20230312 16:43:24.268" level="FAIL">No keyword with name 'https://robotsparebinindustries.com/orders.csv' found.</msg>
+<status status="FAIL" starttime="20230312 16:43:24.268" endtime="20230312 16:43:24.268"/>
+</kw>
+<status status="FAIL" starttime="20230312 16:43:24.263" endtime="20230312 16:43:24.269"/>
+</kw>
+<kw name="Read order file as a table">
+<status status="NOT RUN" starttime="20230312 16:43:24.273" endtime="20230312 16:43:24.273"/>
+</kw>
+<kw name="Close the annoying modal">
+<msg timestamp="20230312 17:58:49.916" level="FAIL">No keyword with name 'Close the annoying modal' found.</msg>
+<status status="FAIL" starttime="20230312 17:58:49.916" endtime="20230312 17:58:49.916"/>
+</kw>
+<kw name="Get orders">
+<var>${orders}</var>
+<status status="NOT RUN" starttime="20230312 17:58:49.919" endtime="20230312 17:58:49.919"/>
+</kw>
+<kw name="Fill the form">
+<arg>${orders}</arg>
+<status status="NOT RUN" starttime="20230312 17:58:49.922" endtime="20230312 17:58:49.923"/>
+</kw>
+<kw name="Close the annoying modal">
+<msg timestamp="20230312 17:58:51.299" level="FAIL">No keyword with name 'Close the annoying modal' found.</msg>
+<status status="FAIL" starttime="20230312 17:58:51.299" endtime="20230312 17:58:51.299"/>
+</kw>
+<kw name="Get orders">
+<var>${orders}</var>
+<status status="NOT RUN" starttime="20230312 17:58:51.302" endtime="20230312 17:58:51.302"/>
+</kw>
+<kw name="Fill the form">
+<arg>${orders}</arg>
+<status status="NOT RUN" starttime="20230312 17:58:51.305" endtime="20230312 17:58:51.305"/>
+</kw>
+<kw name="select">
+<msg timestamp="20230312 18:39:14.560" level="FAIL">No keyword with name 'select' found. Did you mean:
+    RPA.Browser.Selenium.Select Frame</msg>
+<status status="FAIL" starttime="20230312 18:39:14.560" endtime="20230312 18:39:14.560"/>
+</kw>
+<kw name="Save Pdf" library="RPA.PDF">
+<arg>output_path</arg>
+<arg>reader</arg>
+<doc>Save the contents of a pypdf reader to a new file.</doc>
+<msg timestamp="20230312 19:43:29.006" level="FAIL">AttributeError: 'str' object has no attribute 'pages'</msg>
+<status status="FAIL" starttime="20230312 19:43:29.000" endtime="20230312 19:43:29.009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="RPA.Browser.Selenium">
+<arg>locator</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20230312 19:47:34.640" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x0000000104ffa428 chromedriver + 4899880
+1   chromedriver                        0x0000000104f77a23 chromedriver + 4364835
+2   chromedriver                        0x0000000104bc1bf6 chromedriver + 474102
+3   chromedriver                        0x0000000104b97cdc chromedriver + 302300
+4   chromedriver                        0x0000000104c3085f chromedriver + 927839
+5   chromedriver                        0x0000000104c46226 chromedriver + 1016358
+6   chromedriver                        0x0000000104c2b333 chromedriver + 906035
+7   chromedriver                        0x0000000104bf555f chromedriver + 685407
+8   chromedriver                        0x0000000104bf6a7e chromedriver + 690814
+9   chromedriver                        0x0000000104fc779e chromedriver + 4691870
+10  chromedriver                        0x0000000104fcc961 chromedriver + 4712801
+11  chromedriver                        0x0000000104fd32ff chromedriver + 4739839
+12  chromedriver                        0x0000000104fcd85a chromedriver + 4716634
+13  chromedriver                        0x0000000104f9ffce chromedriver + 4530126
+14  chromedriver                        0x0000000104fed5c8 chromedriver + 4847048
+15  chromedriver                        0x0000000104fed747 chromedriver + 4847431
+16  chromedriver                        0x000000010500287f chromedriver + 4933759
+17  libsystem_pthread.dylib             0x00007ff8195cd4e1 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff8195c8f6b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230312 19:47:34.608" endtime="20230312 19:47:34.646"/>
+</kw>
+<kw name="Add Files To Pdf" library="RPA.PDF">
+<doc>Add images and/or pdfs to new PDF document</doc>
+<msg timestamp="20230312 20:19:54.146" level="FAIL">TypeError: 'NoneType' object is not iterable</msg>
+<status status="FAIL" starttime="20230312 20:19:54.142" endtime="20230312 20:19:54.146"/>
+</kw>
+<kw name="Add Files To Pdf" library="RPA.PDF">
+<doc>Add images and/or pdfs to new PDF document</doc>
+<msg timestamp="20230312 20:28:57.808" level="FAIL">TypeError: 'NoneType' object is not iterable</msg>
+<status status="FAIL" starttime="20230312 20:28:57.807" endtime="20230312 20:28:57.809"/>
+</kw>
+<kw name="Add Files To Pdf" library="RPA.PDF">
+<arg>${OUTPUT_DIR}/1.ong</arg>
+<doc>Add images and/or pdfs to new PDF document</doc>
+<msg timestamp="20230312 20:29:19.001" level="FAIL">ValueError: Argument 'files' got value '/Users/sophietruong1992/Desktop/roboCorp/robot-order/1.ong' that cannot be converted to list or None.</msg>
+<status status="FAIL" starttime="20230312 20:29:18.999" endtime="20230312 20:29:19.004"/>
+</kw>
+<kw name="Add Files To Pdf" library="RPA.PDF">
+<doc>Add images and/or pdfs to new PDF document</doc>
+<msg timestamp="20230312 21:00:12.344" level="FAIL">
